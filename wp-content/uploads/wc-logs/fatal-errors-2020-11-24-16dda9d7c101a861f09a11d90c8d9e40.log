@@ -1,0 +1,24 @@
+2020-11-24T12:46:02+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php on line 19
+
+2020-11-24T12:46:37+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php:19
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php on line 19
+
+2020-11-24T12:53:37+00:00 CRITICAL Uncaught Error: Call to undefined function twentynineteen_the_posts_navigation() in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php:18
+Stack trace:
+#0 C:\xampp\htdocs\wordpress\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\wordpress\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\wordpress\wp-content\themes\twentynineteen-child\index.php on line 18
+

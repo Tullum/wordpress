@@ -1,0 +1,27 @@
+"browserslist":{
+    "name": "name",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {}
+} {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "last 1 ie version"
+    ]
+  },
+
+  "scripts": {
+    "start": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts start",
+    "build": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts build",
+    "test": "cross-env AUTOPREFIXER_GRID=autoplace react-scripts test",
+    "eject": "react-scripts eject"
+  }
