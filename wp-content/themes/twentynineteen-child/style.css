@@ -11,3 +11,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Template: twentynineteen
 */
 @import url("../twentynineteen/style.css");
+
+
+div.custom-menu-class {
+    background-color: #000000;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+div.custom-menu-class ul {
+    margin:20px 0px 20px 0px;
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+    text-align:right;
+
+}
+div.custom-menu-class li {
+    padding: 0px 20px 0px 0px;
+    display: inline;
+} 
+div.custom-menu-class a { 
+    color:#FFFFFF;
+}
