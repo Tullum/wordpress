@@ -22,11 +22,31 @@ function my_theme_enqueue_styles(){
     );
 }
 
+// This theme uses wp_nav_menu() in two locations.
+register_nav_menus(
+    array(
+        'my-custom-menu' => __( 'Primary', 'twentynineteen-child' ),
+        /*'footer' => __( 'Footer Menu', 'twentynineteen-child' ),
+        'social' => __( 'Social Links Menu', 'twentynineteen-child' ),*/
+    )
+);
+
+function theme_features() {
+    add_theme_support('post-thumbnails');
+}
+
+function wp_reasouces() {
+    wp_enqueue_style('style', get_stylesheet_uri());
+}
+
+add_action('wp_enqueue_scripts', 'wp_reasouces');
+
 function wpb_custom_new_menu() {
     register_nav_menu('my-custom-menu',__( 'My Custom Menu' ));
   }
   add_action( 'init', 'wpb_custom_new_menu' );
 
+ 
  //Custom Post Type
  
 function medarbejder_post_type() {
@@ -43,7 +63,8 @@ function medarbejder_post_type() {
         'update_item' => __( 'Updater Medarbejder' ),
         'search_items' => __( 'Søg efter Medarbejder' ),
         'not_found' => __( 'Ikke fundet' ),
-        'not_found_in_trach' => __( 'Ikke fundet i affald' )
+        'not_found_in_trach' => __( 'Ikke fundet i affald' ),
+        
     );
     $args = array(
         'label' => __( 'medarbejdere' ),
@@ -60,7 +81,9 @@ function medarbejder_post_type() {
 	        'yarpp_support'       => true,
 		'taxonomies' 	      => array('post_tag'),
 		'publicly_queryable'  => true,
-		'capability_type'     => 'page'
+        'capability_type'     => 'page',
+        'menu_icon' => __( 'dashicons-admin-users' ),
+        'supports'            => array ('title', 'editor', 'thumbnail' )
     );
     register_post_type( 'medarbejdere', $args );
 }
@@ -95,3 +118,4 @@ function medarbejder_afdelinger_taxonomy() {
         'rewrite' => array('slug' => 'afdeling')
     ));
 }
+

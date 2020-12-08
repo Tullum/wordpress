@@ -12,6 +12,89 @@ Template: twentynineteen
 */
 @import url("../twentynineteen/style.css");
 
+.dropdown {
+    float: right;
+}
+
+#liste_r_1{
+    background-color: salmon;
+    border: solid 20px #FFFFFF;
+}
+
+#liste_r_2 {
+    background-color: aqua;
+}
+
+#liste_r_3 {
+    background-color: aqua;
+}
+
+
+#liste_r_4 {
+    background-color: aqua;
+}
+
+
+#liste_r_5 {
+    background-color: aqua;
+}
+
+
+#infobox_1_1 {
+    background-color: gray;
+    border-top: solid 20px #FFFFFF;
+    border-left: solid 20px #FFFFFF;
+    border-bottom: solid 20px #FFFFFF;
+
+   
+}
+#infobox_1_2 {
+    background-color: gray;
+    border-top: solid 20px #FFFFFF;
+    border-right: solid 20px #FFFFFF;
+    border-bottom: solid 20px #FFFFFF;
+      
+}
+
+#infobox_2_1 {
+    background-color: gray;
+    border-top: solid 20px #FFFFFF;
+    border-left: solid 20px #FFFFFF;
+    border-bottom: solid 20px #FFFFFF; 
+}
+
+#infobox_2_2{
+    background-color: gray;
+    border-top: solid 20px #FFFFFF;
+    border-right: solid 20px #FFFFFF;
+    border-bottom: solid 20px #FFFFFF;
+}
+
+#infobox_3_1 {
+    background-color: gray;
+    border-top: solid 30px #FFFFFF;
+    border-left: solid 20px #FFFFFF;
+
+}
+#infobox_3_2 {
+    background-color: gray;
+    border-top: solid 30px #FFFFFF;
+    border-right: solid 20px #FFFFFF;
+}
+
+.ansat_ulige {
+    background-color: yellowgreen;
+    border: solid 20px #FFFFFF;
+    
+}
+
+.ansat_lige {
+    background-color: tomato;
+    border: solid 20px #FFFFFF;
+}
+
+
+
 
 div.custom-menu-class {
     background-color: #000000;
