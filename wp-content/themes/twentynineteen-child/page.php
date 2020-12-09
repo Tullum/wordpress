@@ -45,7 +45,11 @@ endif;
 ));*/
 
 ?>
-	<div id="liste_r_1" class="row">
+
+
+
+	
+<div id="liste_r_1" class="row">
 		<div class="col-sx-12 col-sm-12 col-md-12 col-lg-12">
 			<div class="dropdown">
 				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -58,124 +62,123 @@ endif;
 				</div>
 			</div>
 		</div>
-	</div>
-	<div id="liste_r_2" class="row">
-		<div id="infobox_1_1" class="col-sx-6 col-sm-2 col-md-2 col-lg-2">
-			<h1>info1</h1>
-		</div>
-		<div id="infobox_1_2" class="col-sx-6 col-sm-4 col-md-4 col-lg-4">
-			<h1>info2</h1>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 1</h3>
-			<?php
-				$medarbejder_udvikling = new WP_Query(array(
-					'posts_per_page' => 4,
-					'post_type' => 'medarbejdere',
-					
-				));
+</div>
+	<div class="row">
+		<div id="medarbejder-box">
+			<div class="row">
+				<div id="infobox1" class="col-xs-12 col-sm-8 col-md-6">
+					<h3>Salg</h3>
+					<div class="row">				
+						<div class="kolone-1">							
+							<a href="https://www.google.com/maps?sxsrf=ALeKk01xQ8GS6R_YxMZwWoncVUIFlXnDMg:1607517174901&q=onlineplus+odense&gs_lcp=CgZwc3ktYWIQAzIRCC4QxwEQrwEQyQMQywEQkwIyAggmOhAILhDHARCvARDJAxAnEJMCOgQIIxAnOgUIABDLAToHCAAQFBCHAjoCCAA6DgguEMcBEK8BEMkDEMsBOgYIABAWEB46CAgAEBYQChAeUKVhWOVpYIFsaABwAHgBgAGWAogBgwmSAQUyLjUuMZgBAKABAaoBB2d3cy13aXrAAQE&uact=5&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiruY6Z9MDtAhXBsKQKHYZUAa4Q_AUoAnoECA0QBA">
+								<p>OnlinePlus<br>
+								Rugårdsvej 104D<br>
+								5000 Odense</p>
+							</a>
+						</div>
+						<div class="kolone-2">
+							<p><a href="tel:70221144"><i class="fas fa-phone-alt"></i> Tlf. 70 22 11 44</a></p>
+						</div>
+					</div>
+				</div>
+				<?php
+					$medarbejder = array(
+						'numberposts' => -1,
+						'post_type' => 'medarbejdere',
+					);
 
-				while($medarbejder_udvikling->have_posts()) {
-					$medarbejder_udvikling->the_post(); ?>
-					<h6><?php the_title(); ?></h6>
-					<p><?php the_field('medarbejder_titel');?></p>
-					<p><?php the_field('medarbejder_telefon') ?></p>
-					<?php the_post_thumbnail(); ?>
-				<?php }
-			?>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 2</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 3</h3>
-		</div>
-	</div>
-	<div id="liste_r_3" class="row">
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 4</h3>
-		</div>
-		<div  class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 5</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 6</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 7</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 8</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 9</h3>
-		</div>
-	</div>
-	<div id="liste_r_4" class="row">
-		<div id="infobox_2_1" class="col-sx-6 col-sm-2 col-md-2 col-lg-2">
-			<h1>info1</h1>
-		</div>
-		<div id="infobox_2_2" class="col-sx-6 col-sm-4 col-md-4 col-lg-4">
-			<h1>info2</h1>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 1</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 2</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 3</h3>
-		</div>
-	</div>
-	<div id="liste_r_5" class="row">
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 4</h3>
-		</div>
-		<div  class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 5</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 6</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 7</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 8</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 9</h3>
-		</div>
-	</div>
-	<div id="liste_r_6" class="row">
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 4</h3>
-		</div>
-		<div  class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 5</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 6</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 7</h3>
-		</div>
-		<div class="ansat_lige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 8</h3>
-		</div>
-		<div class="ansat_ulige col-sx-12 col-sm-2 col-md-2 col-lg-2">
-			<h3>ansat 9</h3>
+					$the_query = new WP_Query ( $medarbejder );
+					?>
+					
+					<?php
+					if( $the_query->have_posts() ): ?>
+						<?php while ($the_query->have_posts() ): $the_query->the_post(); ?>
+						<div class="col-sx-12 col-sm-2 col-md-2 medarbejder-wrapper">
+							<div class="medarbejder-img">
+								<?php the_post_thumbnail(); ?>
+							</div>
+							<div class="medarbejder-overlay">
+								<p><b><?php the_title(); ?></b>
+								<?php the_field('medarbejder_titel'); ?></p>				
+								<div class="medarbejder-knap"><p><i class="fas fa-angle-down"></i></p>
+									<!--<p><?php the_field('medarbejder_telefon'); ?></p>
+									<p><?php the_field('medarbejder_email'); ?></p>-->
+								</div>
+							</div>
+						</div>
+						<?php endwhile; ?>
+					<?php endif; ?>
+			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div id="infobox_3_1" class="col-sx-12 col-sm-12 col-md-8 col-lg-8">
-			<h1>er du i tvivl box</h1>
-		</div>
-		<div id="infobox_3_2" class="col-sx-12 col-sm-12 col-md-4 col-lg-4">
-			<h1>er du i tvivl pt. 2</h1>
+		<div id="medarbejder-box">
+			<div class="row">
+				<div id="infobox1" class="col-xs-12 col-sm-8 col-md-6">
+					<h3>Udvikling</h3>
+					<div class="row">				
+						<div class="kolone-1">							
+							<a href="https://www.google.com/maps?sxsrf=ALeKk01xQ8GS6R_YxMZwWoncVUIFlXnDMg:1607517174901&q=onlineplus+odense&gs_lcp=CgZwc3ktYWIQAzIRCC4QxwEQrwEQyQMQywEQkwIyAggmOhAILhDHARCvARDJAxAnEJMCOgQIIxAnOgUIABDLAToHCAAQFBCHAjoCCAA6DgguEMcBEK8BEMkDEMsBOgYIABAWEB46CAgAEBYQChAeUKVhWOVpYIFsaABwAHgBgAGWAogBgwmSAQUyLjUuMZgBAKABAaoBB2d3cy13aXrAAQE&uact=5&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiruY6Z9MDtAhXBsKQKHYZUAa4Q_AUoAnoECA0QBA">
+								<p>OnlinePlus<br>
+								Rugårdsvej 104D<br>
+								5000 Odense</p>
+							</a>
+						</div>
+						<div class="kolone-2">
+							<p><a href="tel:70221144"><i class="fas fa-phone-alt"></i> Tlf. 70 22 11 44</a></p>
+						</div>
+					</div>
+				</div>
+				<?php
+					$medarbejder = array(
+						'numberposts' => -1,
+						'post_type' => 'medarbejdere',
+					);
+
+					$the_query = new WP_Query ( $medarbejder );
+					?>
+					
+					<?php
+					if( $the_query->have_posts() ): ?>
+						<?php while ($the_query->have_posts() ): $the_query->the_post(); ?>
+						<div class="col-sx-12 col-sm-2 col-md-2 medarbejder-wrapper">
+							<div class="medarbejder-img">
+								<?php the_post_thumbnail(); ?>
+							</div>
+							<div class="medarbejder-overlay">
+								<p><b><?php the_title(); ?></b>
+								<?php the_field('medarbejder_titel'); ?></p>
+								<div class="medarbejder-knap"><p><i class="fas fa-angle-down"></i></p>
+									<!--<p><?php the_field('medarbejder_telefon'); ?></p>
+									<p><?php the_field('medarbejder_email'); ?></p>-->
+								</div>
+							</div>
+						</div>
+						<?php endwhile; ?>
+					<?php endif; ?>
+			</div>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-sx-12 col-sm-12 col-md-12 col-lg-12">
+			<div id="infobox2">
+			
+				<div class="row">
+					<div class="kolone-1">	
+						<h3>Er du i tvivl?</h3>						
+						<p>Er du i tvivl eller har du spørgsmål til vores produkter, er du mere end velkommen til at kontakte os på tlf. eller mail.</p>
+					</div>
+					<div class="kolone-2">
+						<p class="tlf"><a href="tel:70221144"><i class="fas fa-phone-alt"></i> Tlf. 70 22 11 44</a></p>
+						<p class="mail"><a href="mailto:support@onlineplus.dk"><i class="far fa-envelope"></i> support@onlineplus.dk</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	
 </div>
 
 <?php

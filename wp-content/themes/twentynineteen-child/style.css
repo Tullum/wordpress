@@ -12,6 +12,10 @@ Template: twentynineteen
 */
 @import url("../twentynineteen/style.css");
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .dropdown {
     float: right;
 }
@@ -21,78 +25,188 @@ Template: twentynineteen
     border: solid 20px #FFFFFF;
 }
 
-#liste_r_2 {
-    background-color: aqua;
-}
-
-#liste_r_3 {
-    background-color: aqua;
+#medarbejder-box {
+    border: #FFFFFF solid 10px;
 }
 
 
-#liste_r_4 {
-    background-color: aqua;
+.medarbejder-wrapper{
+    border-left: solid 5px #FFFFFF;
+    border-right: solid 5px #FFFFFF;
+    border-bottom: solid 5px #FFFFFF;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.medarbejder-img{
+    display: block;
+    height: 100%;
+    max-height: 219px;
+    width: 100%;
+    max-width: 220px;
 }
 
 
-#liste_r_5 {
-    background-color: aqua;
-}
-
-
-#infobox_1_1 {
-    background-color: gray;
-    border-top: solid 20px #FFFFFF;
-    border-left: solid 20px #FFFFFF;
-    border-bottom: solid 20px #FFFFFF;
-
-   
-}
-#infobox_1_2 {
-    background-color: gray;
-    border-top: solid 20px #FFFFFF;
-    border-right: solid 20px #FFFFFF;
-    border-bottom: solid 20px #FFFFFF;
-      
-}
-
-#infobox_2_1 {
-    background-color: gray;
-    border-top: solid 20px #FFFFFF;
-    border-left: solid 20px #FFFFFF;
-    border-bottom: solid 20px #FFFFFF; 
-}
-
-#infobox_2_2{
-    background-color: gray;
-    border-top: solid 20px #FFFFFF;
-    border-right: solid 20px #FFFFFF;
-    border-bottom: solid 20px #FFFFFF;
-}
-
-#infobox_3_1 {
-    background-color: gray;
-    border-top: solid 30px #FFFFFF;
-    border-left: solid 20px #FFFFFF;
-
-}
-#infobox_3_2 {
-    background-color: gray;
-    border-top: solid 30px #FFFFFF;
-    border-right: solid 20px #FFFFFF;
-}
-
-.ansat_ulige {
-    background-color: yellowgreen;
-    border: solid 20px #FFFFFF;
+.medarbejder-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
     
 }
 
-.ansat_lige {
-    background-color: tomato;
-    border: solid 20px #FFFFFF;
+.medarbejder-wrapper:hover .medarbejder-overlay {
+    opacity: 0.7;
+    overflow: hidden;
 }
 
+.medarbejder-overlay p{
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-75%, -50%);
+  -ms-transform: translate(-75%, -50%);
+  transform: translate(-75%, -50%);
+ 
+}
+
+.medarbejder-overlay .medarbejder-knap{
+    position: absolute;
+    top: 70%;
+    left: 75%;
+    -webkit-transform: translate(-70%, -75%);
+    -ms-transform: translate(-70%, -75%);
+    transform: translate(-70%, -75%);
+}
+
+.medarbejder-knap p {
+  font-size: 20px;
+}
+
+.medarbejder-knap p:hover{
+ color: #00ba31;
+
+}
+
+
+#infobox1 {
+    background-color: #00ba31;
+    border-left: solid 20px #FFFFFF;
+    border-right: solid 20px #FFFFFF;
+    border-bottom: solid 20px #FFFFFF;
+}
+
+#infobox1 h3 {
+    font-weight: 500;
+    font-size: 25px;
+    color: #FFFFFF;
+    padding-left: 3%;
+}
+
+
+#infobox1 .kolone-1 a p {
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-left: 12%;
+    
+}
+#infobox1 .kolone-1 a p:hover {
+    font-size: 15px;
+    color: #000000;
+    padding-left: 12%;
+    
+}
+
+#infobox1 .kolone-2 p {
+    font-size: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: baseline;
+    
+}
+
+#infobox2 {
+    background-color: #ededed;
+}
+
+#infobox2 .kolone-1 h3 {
+    
+    font-size: 25px;
+    padding-top: 5%;
+    padding-left: 12%;
+
+}
+
+#infobox2 .kolone-1 p {
+    font-size: 15px;
+    padding-left: 12%;
+  
+
+}
+#infobox2 .kolone-2 p {
+    font-size: 15px;
+    padding-left: 12%;
+    line-height: 1px;
+}
+
+ a {
+    color: #FFFFFF;
+}
+
+a:hover {
+    color: #000000;
+}
+
+
+
+
+
+p:hover {
+    color: #000000;
+}
+
+#infobox2 .kolone-2 {
+    padding-top: 7%;
+}
+
+.kolone-1{
+    width: 50%;
+    align-content: center;
+}
+
+.kolone-2{
+    width: 50%;
+    align-content: center;
+    font-weight: 500;
+}
+
+
+
+.tlf a {
+    color: #00ba31;
+}
+.tlf a:hover {
+    color: #000000;
+}
+
+.mail a {
+    color: #000000;
+}
+
+.mail a:hover {
+    color: #ffffff;
+}
 
 
 
